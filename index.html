@@ -3,63 +3,51 @@
   <head>
     <title>My First Website!!</title>
     <style>
-      #uniqueParagraph {
+      #headingID {
         font-family: "Trattatello";
-        font-size: 3em;
+        font-size: 50px;
+        border: solid 3px maroon;
       }
       
-      h1 {
-        border: solid 6px #B4ECB2;
-      }
-      
-      h2 {
+      ul {
+        border-width: 5px;
         border-style: dashed;
-        border-width: 3px;
-        border-color: #B2B4EC;
-      }
-      
-      div {
-        font-size: 40px;
-        color: red;
-      }
-      
-      #boxmodelParagraph {
-        backgroundColor: blue;
-        width: 300;
-        margin: 20px;
+        border-color: #A30892;
         padding: 20px;
-        border: 5px green solid;
+      }
+      
+      p {
+        font-family: "Bradley Hand";
+        font-size: 3em;
       }
       
       div {
         border: dotted 10px blue;
         margin: 30px;
         padding: 30px;
+      }
+      
+      #someid {
+        border: dotted 5px blue;
+        margin: 30px;
+        padding: 30px;
+      }
     </style>
   </head>
-  
+  Display an image with a margin an padding of 30 px and a border that is dotted, blue, and has a width of 5px
   <body>
-    <h1>A BIG HEADER</h1>
-    <img src="https://anistack.com/filemanager/uploads/121680212_392678082136880_7213917662027182607_n.jpg" alt="" id="someid">
-    <p id="uniqueParagraph">Hello my name is Amy</p>
-    
-    <h2>a smaller header</h2>
-    
-    <a href="allaboutme.html">All about me...</a>
-
-    <ul style="color: blue">
-     <li>Random thing</li>
-     <li>something</li>
-     <li>something else</li>
+    <h1 id="headingID">BIG heading!</h1>
+    <img src="https://anistack.com/filemanager/uploads/121680212_392678082136880_7213917662027182607_n.jpg" alt="image not loading" id="someid">
+    <ul>
+      <li>Fruits</li>
+      <li>Veggies</li>
+      <li>Meat</li>
+      <li>Dairy</li>
     </ul>
-
-    <ol>
-      <li>First thing</li>
-      <li>Second thing</li>
-      <li>Third thing</li>
-    </ol>
-    <p>Be not afraid of greatness.<br>Some are born great,<br>some achieve greatness,<br>and others have greatness thrust upon them.</p>
-    <h3>Ok here have a meme</h3>
-    <img src="https://pbs.twimg.com/media/EyBG0BCXMAM3Xiu.jpg" alt="doesn't work">
+    <div>
+      <p>some paragraph</p>
+      <p>another paragraph</p>
+      <a href="https://pbs.twimg.com/media/EyBG0BCXMAM3Xiu.jpg">some link</a>
+    </div>
   </body>
 </html>
