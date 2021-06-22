@@ -26,17 +26,25 @@
         margin: 30px;
         padding: 30px;
       }
-      
-      #someid {
-        border: dotted 5px blue;
-        margin: 30px;
-        padding: 30px;
-      }
     </style>
+    
+    <script>
+      function myFunction() {
+        document.getElementById("jsDemo").innerHTML = "Hello, " + document.getElementById("userTextInput").value;
+      }
+      
+      function changeFont() {
+        document.getElementById("headingID").style.fontFamily = "Courier New";
+      }
+    </script>
   </head>
-  Display an image with a margin an padding of 30 px and a border that is dotted, blue, and has a width of 5px
+  Display an image with a margin and padding of 30 px and a border that is dotted, blue, and has a width of 5px
   <body>
     <h1 id="headingID">BIG heading!</h1>
+    <button type="button" onclick='changeFont()'>Change the font of this heading!</button>
+    
+    
+    
     <img src="https://anistack.com/filemanager/uploads/121680212_392678082136880_7213917662027182607_n.jpg" alt="image not loading" id="someid">
     <ul>
       <li>Fruits</li>
@@ -47,13 +55,11 @@
     <div>
       <p>some paragraph</p>
       <p>another paragraph</p>
-      <a href="https://pbs.twimg.com/media/EyBG0BCXMAM3Xiu.jpg">some link</a>
+      <a href="layout.html">some link</a>
     </div>
+    <input type="text" id="userTextInput" value="">
     
-    
-    
-    
-    <p id="demo">javascript is cool</p>
-    <button type="button" onclick="document.getElementById("demo").innerHTML = "yay the paragraph changed"">Click this please</button>
+    <p id="jsDemo">Hello! Javascript will change this...</p>
+    <button type="button" onclick='myFunction()'>Update name field!</button>
   </body>
 </html>
