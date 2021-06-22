@@ -22,7 +22,8 @@
     
     .flex-container {
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
       padding: 0;
       margin: 0;
@@ -32,6 +33,10 @@
       background: #DCA8AA;
       padding: 75px;
       font-size: 50px;
+    }
+    
+    #first-element {
+      order: 1;
     }
   </style>
   </head>
