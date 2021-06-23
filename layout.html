@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #A7DAB8;
-    }
-    li {
-      float: left;
-    }
-    a {
-      text-decoration: none;
-      display: block;
-      padding: 15px;
-      text-align: center;
-      color: #645D32;
-    }
-    
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .flex-item {
-      background: #DCA8AA;
-      padding: 75px;
-      font-size: 50px;
-    }
-    
-    #first-element {
-      order: 1;
-    }
-  </style>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #F6B9F2;
+      }
+      ul li {
+        float: left;
+      }
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        text-align: center;
+        color: #B9C5F6;
+      }
+      
+      
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:
+      }
+      
+      .left-column {
+        flex: 1;
+        border: 1px solid;
+        padding: 20px;
+        background: #F1EBE4
+      }
+      
+      .right-column {
+        flex: 2;
+        border: 3px solid #E88181;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <ul>
@@ -49,17 +50,36 @@
         <a href="index.html">News</a>
       </li>
       <li>
-        <a href="index.html">Contact Us</a>
+        <a href="index.html">Contact</a>
       </li>
       <li>
         <a href="index.html">About</a>
       </li>
     </ul>
-  
+   
     <div class="flex-container">
-      <p class="flex-item">Flex Item 1</p>
-      <p class="flex-item">Flex Item 2</p>
-      <p class="flex-item">Flex Item 3</p>
+      <div class="left-column">
+        <h1>Hello there!</h1>
+        <p>Hello. My name is Amy. I hope you can learn more about me on this website!</p>
+        <p>Flexbox layout is pretty neat.</p>
+      </div>
+      
+      <div class="right-column">
+        <h1>Here are some things that I enjoy doing:</h1>
+        <ol>
+          <li>Playing video games</li>
+          <li>Drawing</li>
+          <li>Hanging out with friends</li>
+        </ol>
+      </div>
     </div>
+   
+    
+    
+    
+    
+    
+
+
   </body>
 </html>
